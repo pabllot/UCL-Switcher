@@ -1,0 +1,305 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* ==== VARIABLES ===== */
+:root {
+  --primary: #ddd;
+  --light: #fff;
+  --dark: #333;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background-color: rgba(2, 2, 2, 0.925);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/*  ==== NAVIGTION === */
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a {
+  background-color: var(--primary);
+  display: block;
+  text-decoration: none;
+  height: 15rem;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+}
+
+#cr7 {
+  background-image: url(https://i.pinimg.com/originals/44/09/ac/4409ac7fec02d39ede321f764c31ae1c.jpg);
+  background-size: cover;
+  font-size: 1.4rem;
+  color: #ccc;
+  text-align: start;
+}
+
+#messi {
+  background-image: url(https://neofeed.com.br/wp-content/uploads/2021/08/messi-barcelona.jpg);
+  background-size: cover;
+  font-size: 1.4rem;
+  color: #ccc;
+  text-align: start;
+}
+
+#clubs {
+  background-image: url(https://iem.imgix.net/season-15/katowice/wp-content/uploads/2021/02/IEM-Katowice2021-Trophy-mobile.jpg?auto=format%2Ccompress);
+  background-size: cover;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-align: start;
+}
+
+#appe {
+  background-image: url(https://cdn.wallpapersafari.com/84/64/3OnSow.jpg);
+  background-size: cover;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-align: start;
+}
+
+.main-nav a:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* TOP CONTAINER */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background-image: url(https://www.mktesportivo.com/wp-content/uploads/2018/10/champions_premios.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  color: var(--light);
+  margin-bottom: 0;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  color: var(--light);
+  margin-top: 0;
+}
+
+.top-box {
+  background-color: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+  background-image: url(https://wallpaper.dog/large/5487021.jpg);
+  background-size: cover;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  text-align: start;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.top-box-a p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+}
+
+.top-box-a h2 {
+  color: rgb(0, 0, 0);
+  opacity: 0;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+  background-image: url(https://icdn.psgtalk.com/wp-content/uploads/2019/06/Jordan-Brand-Paris-Saint-German-jersey.jpg);
+  background-size: cover;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  text-align: start;
+}
+
+.top-box-b h2,
+.top-box-b p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  opacity: 0;
+}
+
+.top-box-b h2 {
+  margin-top: 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  margin-top: 2rem;
+  background: rgba(35, 35, 148, 0.877);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+.dark {
+  background-color: #ffffff;
+}
+
+/* teeeeeeeeeeeeeeest */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 10px;
+  height: 26px;
+  width: 75px;
+  transform: scale(1.5);
+  margin-top: 0.4rem;
+}
+
+.ball {
+  background-color: #111;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  height: 40px;
+  width: 40px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(41px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+  font-size: 29px;
+}
+
+.fa-sun {
+  color: rgb(201, 116, 18);
+  font-size: 29px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      "showcase showcase"
+      "top-box-a top-box-b";
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  body .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
+  }
+
+  .top-box-a {
+    width: 100vw;
+    height: auto;
+  }
+
+  @media (max-width: 400px) {
+    footer {
+      display: grid;
+      justify-content: space-between;
+      text-align: left;
+      font-size: 0.8rem;
+    }
+  }
+
+  footer .label {
+    margin-right: 1.5rem;
+  }
+}
